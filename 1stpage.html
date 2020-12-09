@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&amp;display=swap" rel="stylesheet">
+    <title>1st page</title>
+    <style>
+      body{
+        font-family: Comfortaa;
+        background-color:black;
+      }
+        .heading{
+            font-size: 80px;
+            color: #fff;
+            text-align: center;
+            -webkit-animation: heading 1s ease-in-out infinite alternate;
+            -moz-animation: heading 1s ease-in-out infinite alternate;
+            animation: heading 1s ease-in-out infinite alternate;
+          }
+          @keyframes heading {
+            from {
+              text-shadow: 0px 0px  10px cyan, 5px 5px 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+            }
+            
+            to {
+              text-shadow: 10px 0 10px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+            }
+          }
+          #Signup,#Login{
+              height:50px;
+              width:100px;
+              position: relative;
+              left:600px;
+              cursor:pointer;
+                
+                
+          }
+    </style>
+</head>
+<body>
+    <h1 class="heading">WELCOME TO WEB CRAWLER FOR RANDOM NAME GENERATOR</h1>
+    <div class="signing">
+
+        <input type="button" name="button1" value="Signup" id="Signup" >
+        <input type="button" name ="button2" value="Login" id="Login">
+
+        
+
+
+    </div>
+    <script>
+        Signup.addEventListener("click",function(){document.location.href="Signup.php";})
+        Login.addEventListener("click",function(){document.location.href="Login.php";})
+        
+
+
+
+    </script>
+</body>
+</html>
